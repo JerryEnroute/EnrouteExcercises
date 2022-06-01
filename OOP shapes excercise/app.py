@@ -6,16 +6,20 @@ from triangle import Triangle
 print('Here i have a bunch of shapes:\n')
 
 if __name__ == '__main__':
-    
-    square1 = Square('red', True, 5, 5)
-    print('My first square has sides of length', 
-    square1.getSide(), ', it is colored', 
+
+    square1 = Square('red', True, 5)
+    print('My first square has sides of length',
+    square1.getSide(), ', an area of', 
+    square1.getArea(), ', a perimeter of', 
+    square1.getPerimeter(), ', it is colored', 
     square1.getColor(), 'and it is', 'filled\n' 
     if square1.isFilled() else 'not filled\n')
 
-    square2 = Square('blue', False, 10, 10)
+    square2 = Square('blue', False, 10)
     print('My second square has sides of length', 
-    square2.getSide(), ', it is colored', 
+    square2.getSide(), ', an area of', 
+    square2.getArea(), ', a perimeter of', 
+    square2.getPerimeter(), ', it is colored', 
     square2.getColor(), 'and it is', 'filled\n' 
     if square2.isFilled() else 'not filled\n')
 

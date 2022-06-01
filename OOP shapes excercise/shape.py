@@ -6,17 +6,17 @@ class Shape(ABC):
       self._color = _color
       self._filled = _filled
         
-    def getColor(self):
+    def getColor(self) -> str:
       return self._color
 
-    def setColor(self):
-      self._color
+    def setColor(self, color: str):
+      self._color = color
 
-    def isFilled(self):
+    def isFilled(self) -> bool:
       return self._filled
 
-    def setFilled(self):
-      self._filled
+    def setFilled(self, filled: bool):
+      self._filled = filled
 
     @abstractmethod
     def getArea(self, area: float):
@@ -26,5 +26,5 @@ class Shape(ABC):
     def getPerimeter(self, perimeter: float):
       pass
 
-    def __str__(self):
-        f'shape[color = {self._color}, filled = {self._filled}]'
+    def __str__(self) -> str:
+      f'Shape[color = {self._color}, filled = {self._filled}]'
