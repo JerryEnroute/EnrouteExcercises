@@ -20,10 +20,12 @@ class Rectangle(Shape):
     self._length
 
   def getArea(self):
-    return self._width * self._length
+    area = self._width * self._length
+    return area
   
   def getPerimeter(self):
-    return 2 * (self._width + self._length)
+    perimeter = 2 * (self._width + self._length)
+    return perimeter
 
   def __str__(self):
     return f'rectangle[shape[color = {self._color}, filled = {self._filled}, width = {self._width}, length = {self._length}]]'

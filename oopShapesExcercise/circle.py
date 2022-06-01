@@ -11,11 +11,11 @@ class Circle(Shape):
   def setRadius(self):
     self._radius
     
-  def getArea(self, area: float):
+  def getArea(self):
     area = self._radius * self._radius * 3.14
     return area
     
-  def getPerimeter(self, perimeter: float):
+  def getPerimeter(self):
     perimeter = 2 * self._radius * 3.14
     return perimeter
     

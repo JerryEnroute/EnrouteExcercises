@@ -9,11 +9,14 @@ class Triangle(Shape):
   def setSideLength(self, _sideLength: float):
     self._sideLength = _sideLength
 
-  def getArea(self, area: float):
+  def getSideLength(self):
+    return self._sideLength
+
+  def getArea(self):
     area = self._sideLength * self._sideLength * 0.5
     return area
 
-  def getPerimeter(self, perimeter: float):
+  def getPerimeter(self):
     perimeter = 3 * self._sideLength
     return perimeter
 
